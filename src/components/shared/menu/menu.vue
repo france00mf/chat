@@ -1,6 +1,6 @@
 <template>
     <div class="container-menu">
-        <div class="item-menu">Francisco</div>
+        <div class="item-menu"><user-avatar></user-avatar></div>
         <div class="item-menu">Domingos</div>
         <div class="item-menu">José</div>
     </div>
@@ -23,6 +23,9 @@
 
 <script>
 export default {
-    
+    name: 'menu',
+    components: {
+        'user-avatar': require('@/components/shared/user-vatar').default
+    }
 }
 </script>
