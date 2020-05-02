@@ -1,6 +1,6 @@
 <template>
     <div class="user-avatar">
-        <div class="circle-state-online"></div>
+        <div class="circle-state-online" ></div>
         <img src="./01.jpg" />
     </div>
 </template>
@@ -18,8 +18,8 @@
     width: 12px;
     height: 12px;
     background: green;
-    border-radius: 50px;
     border: 4px solid black;
+    border-radius: 50px;
 }
 .user-avatar img{
  width: 55px;
@@ -30,6 +30,13 @@
 
 <script>
 export default {
-    
+    name: 'user-avatar',
+    data: function() {
+      return{
+        borderStyle: {
+            border: '4px solid black'
+        }
+        }
+    }
 }
 </script>
