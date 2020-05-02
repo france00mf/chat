@@ -1,6 +1,7 @@
 <template>
   <default-layout>
   </default-layout>
+  <h1>SUBTITLE</h1>
 </template>
 <script>
 export default {
