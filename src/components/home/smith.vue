@@ -8,7 +8,7 @@
             <div class="country">Luanda, Angola</div>
             <div class="description">Help people to build Web sites and apps + grow awareness in social media 🔥</div>
             </div> -->
-            <user-avatar></user-avatar>
+            <user-avatar background="black"></user-avatar>
             <!--Social Media-->
             <div class="social-icons">
                 <div class="icon">

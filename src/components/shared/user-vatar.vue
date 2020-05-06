@@ -1,6 +1,7 @@
 <template>
     <div class="user-avatar">
-        <div class="circle-state-online" ></div>
+        <!-- <div class="circle-state-online" :style="{'border': '4px' + 'solid' + background}"></div> -->
+        <div class="circle-state-online" v-bind:style="{border: $('4px' + 'solid' + 'black')}"></div>
         <img src="./01.jpg" />
     </div>
 </template>
@@ -15,11 +16,11 @@
 }
 .user-avatar .circle-state-online{
     position: absolute;
+    border: 4px + solid;
     float: right;
     width: 12px;
     height: 12px;
     background: green;
-    border: 4px solid black;
     border-radius: 50px;
 }
 .user-avatar img{
@@ -31,11 +32,12 @@
 
 <script>
 export default {
+    props: ['background'],
     name: 'user-avatar',
     data: function() {
       return{
         borderStyle: {
-            border: '4px solid black'
+            // border: '4px solid black'
         }
         }
     }
