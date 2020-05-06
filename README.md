@@ -1,4 +1,4 @@
-![Créditos](https://assets.materialup.com/uploads/ddee5e43-4aea-4c63-abf4-b08f7233d98c/preview.png)
+![Créditos](https://raw.githubusercontent.com/FranciscoJose00MF/chat/8c78b4dbd121e2e7eaf8cb0bbde30d71da471589/src/assets/img/ui/01.png)
 # chat
 
 ## Project setup
