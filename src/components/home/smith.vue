@@ -1,13 +1,14 @@
 <template>
 <div class="container">
     <div class="wrapper">
-        <div class="perfil">
+        <!-- <div class="perfil">
             <img src="./smith.png" class="foto">
             <div class="online"></div>
             <h3 class="name">Smith Cassola</h3>
             <div class="country">Luanda, Angola</div>
             <div class="description">Help people to build Web sites and apps + grow awareness in social media 🔥</div>
-            </div>
+            </div> -->
+            <user-avatar></user-avatar>
             <!--Social Media-->
             <div class="social-icons">
                 <div class="icon">
@@ -44,7 +45,9 @@
 
 <script>
 export default {
-    
+    components: {
+        'user-avatar': require('@/components/shared/user-vatar').default
+    }
 }
 </script>
 

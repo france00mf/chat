@@ -9,8 +9,9 @@
 .user-avatar{
     padding-top: 20px;
     position: relative;
-    width: 66%;
+    width: 60px;
     margin: auto;
+    /* background: blue; */
 }
 .user-avatar .circle-state-online{
     position: absolute;
