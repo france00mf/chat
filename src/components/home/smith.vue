@@ -1,24 +1,23 @@
 <template>
 <div class="container">
     <div class="wrapper">
-        <!-- <div class="perfil">
-            <img src="./smith.png" class="foto">
-            <div class="online"></div>
+         <div class="perfil">
+            <user-avatar borderProps="4px solid white" class="image-profile"></user-avatar>
+
             <h3 class="name">Smith Cassola</h3>
             <div class="country">Luanda, Angola</div>
             <div class="description">Help people to build Web sites and apps + grow awareness in social media 🔥</div>
-            </div> -->
-            <user-avatar borderProps="4px solid white"></user-avatar>
+            </div> 
             <!--Social Media-->
             <div class="social-icons">
                 <div class="icon">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
             <div class="icon">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-twitter"></i></a>
             </div>
             <div class="icon">
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
             </div>
         </div><!--End Social Media-->
         <div class="row"></div> <!--Linha Divisória-->
@@ -71,7 +70,7 @@ export default {
     border-bottom-right-radius: 34px;
     border-left: 2px solid rgba(167, 167, 167, 0.082);
 }
-
+/*contactos*/
 thead, tr, th, td {
     font: inherit;
     color: rgb(53, 53, 53);
@@ -85,6 +84,7 @@ td {
 
 th{
     text-align: start;
+    font-weight: bold;
 }
 
 .wrapper .perfil {
@@ -143,16 +143,19 @@ th{
     text-align: center;
     font-family: tahoma;
     margin: -66px;
-    padding-top: 69px;
+    padding-top: 6em;
 }
 
 .wrapper .perfil {
     width: 130px;
     height: 42px;
     display: block;
-    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image-profile {
+    margin-bottom: 31px;
 }
 
 .wrapper .social-icons{
