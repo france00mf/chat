@@ -2,7 +2,7 @@
 <div class="container">
     <div class="wrapper">
          <div class="perfil">
-            <user-avatar background="4px solid black" class="image-profile"></user-avatar>
+            <user-avatar borderProps="4px solid white" class="image-profile"></user-avatar>
 
             <h3 class="name">Smith Cassola</h3>
             <div class="country">Luanda, Angola</div>

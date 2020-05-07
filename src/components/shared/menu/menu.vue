@@ -1,6 +1,6 @@
 <template>
     <div class="container-menu">
-        <div class="item-menu"><user-avatar></user-avatar></div>
+        <div class="item-menu"><user-avatar borderProps="4px solid black"></user-avatar></div>
         <div class="item-menu">Domingos</div>
         <div class="item-menu">José</div>
     </div>
