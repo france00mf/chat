@@ -1,7 +1,8 @@
 <template>
     <div class="user-avatar">
         <!-- <div class="circle-state-online" :style="{'border': '4px' + 'solid' + background}"></div> -->
-        <div class="circle-state-online" qv-bind:style="'border': background"></div>
+        <div class="circle-state-online" v-bind:style="{border: borderProps}"></div>
+        <!-- <img src="~@/components/home/smith.png" /> -->
         <img src="./01.jpg" />
     </div>
 </template>
@@ -12,11 +13,9 @@
     position: relative;
     width: 60px;
     margin: auto;
-    /* background: blue; */
 }
 .user-avatar .circle-state-online{
     position: absolute;
-    border: 4px + solid;
     float: right;
     width: 12px;
     height: 12px;
@@ -32,7 +31,7 @@
 
 <script>
 export default {
-    props: ['background'],
+    props: ['borderProps'],
     name: 'user-avatar',
     data: function() {
       return{
