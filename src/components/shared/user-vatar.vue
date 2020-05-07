@@ -1,7 +1,7 @@
 <template>
     <div class="user-avatar">
         <!-- <div class="circle-state-online" :style="{'border': '4px' + 'solid' + background}"></div> -->
-        <div class="circle-state-online" v-bind:style="{border: $('4px' + 'solid' + 'black')}"></div>
+        <div class="circle-state-online" qv-bind:style="'border': background"></div>
         <img src="./01.jpg" />
     </div>
 </template>
