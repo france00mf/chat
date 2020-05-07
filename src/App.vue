@@ -7,7 +7,6 @@
 <style>
 body{
     margin: 0;
-    background: #333;
 }
 
 #app {
