@@ -3,7 +3,6 @@
     <div class="wrapper">
          <div class="perfil">
             <user-avatar borderProps="4px solid white" class="image-profile"></user-avatar>
-
             <h3 class="name">Smith Cassola</h3>
             <div class="country">Luanda, Angola</div>
             <div class="description">Help people to build Web sites and apps + grow awareness in social media 🔥</div>
@@ -38,7 +37,22 @@
             </thead>
         </table>
         <div class="row"></div> <!--Linha Divisória-->
-    </div>
+         <div class="media-files">
+             <a href="#">
+                 <p class="gallery-image">Media (31)</p></a>
+                    <a href="#">
+                        <p onclick="openImages()" class="image-more">See all ></p></a>
+                    </div>
+                <div class="gallery">
+                    <article><a href="#" class="image fit">
+                        <img src="../../assets/eminem.jpg" title="" alt="" /></a></article>
+                             <article><a href="#" class="image fit">
+                                 <img src="../../assets/eminem.jpg" title="" alt="" /></a></article>
+                                    <article><a href="#" class="image fit"><img src="../../assets/eminem.jpg" title="" alt="" /></a>
+                                            </article>
+                                            
+                                    </div>
+        </div>
 </div>
 </template>
 
@@ -62,12 +76,12 @@ export default {
     justify-content: flex-end;
 }
 .wrapper {
-    height: 100vh;
-    width: 310px;
+
+    width: 308px;
     background: rgb(252, 252, 252);
     padding: 2px 20px 20px 20px;
-    border-top-right-radius: 34px;
-    border-bottom-right-radius: 34px;
+   /* border-top-right-radius: 34px;
+    border-bottom-right-radius: 34px;*/
     border-left: 2px solid rgba(167, 167, 167, 0.082);
 }
 /*contactos*/
@@ -234,7 +248,7 @@ table {
 
 .gallery{
     display: flex;
-    overflow-y: scroll;
+    padding-bottom: 45px; 
 }
 
 .gallery-image{
