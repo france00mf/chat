@@ -14,3 +14,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+div{
+    display: flex;
+    justify-content: space-between;
+}
+</style>
