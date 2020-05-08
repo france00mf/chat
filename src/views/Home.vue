@@ -1,15 +1,17 @@
 <template>
-  <default-layout>
+   <div>
     <message-room></message-room>
-    <h1>alsdfjsd</h1>
-  </default-layout>
+    <side-bar></side-bar>
+   </div>
 </template>
 <script>
 export default {
   name: 'Home',
   components: {
-    'default-layout': require('@/layout/default.layout.vue').default,
-    'message-room': require('@/components/home/message-room/message-room.vue').default
+    // 'default-layout': require('@/layout/default.layout.vue').default,
+    'message-room': require('@/components/home/message-room/message-room.vue').default,
+    'side-bar': require('@/components/home/smith').default
   }
 }
 </script>
+

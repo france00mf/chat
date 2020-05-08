@@ -1,7 +1,7 @@
 <template>
 <div>
     <app-nav></app-nav>
-    <side-bar></side-bar>
+    <router-view></router-view>
 </div>
 </template>
 
@@ -10,7 +10,6 @@ export default {
     name: 'default-layout',
     components: {
         'app-nav': require('@/components/shared/menu/menu').default,
-        'side-bar': require('@/components/home/smith').default
     }
 }
 </script>
