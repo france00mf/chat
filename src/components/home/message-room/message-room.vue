@@ -8,7 +8,7 @@
           <filter-dropdown description="sort by"></filter-dropdown>
           <button-add description="add new"></button-add>
         </div>
-        
+        <cards></cards>
     </div>
 </template>
 
@@ -19,7 +19,8 @@ export default {
     'user-search': require('@/components/shared/user-search.vue').default,
     'message-counter': require('@/components/shared/message-counter.vue').default,
     'button-add': require('@/components/shared/button-add.vue').default,
-    'filter-dropdown': require('@/components/shared/filter-dropdown.vue').default
+    'filter-dropdown': require('@/components/shared/filter-dropdown.vue').default,
+    'cards': require('./cards.vue').default
   }
 }
 </script>
