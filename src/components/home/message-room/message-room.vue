@@ -20,7 +20,7 @@ export default {
     'message-counter': require('@/components/shared/message-counter.vue').default,
     'button-add': require('@/components/shared/button-add.vue').default,
     'filter-dropdown': require('@/components/shared/filter-dropdown.vue').default,
-    'cards': require('./cards.vue').default
+    'cards': require('./Cards.vue').default
   }
 }
 </script>
