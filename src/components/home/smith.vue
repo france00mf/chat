@@ -74,15 +74,15 @@ export default {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    background: rgb(252, 252, 252);
 }
 .wrapper {
 
     width: 308px;
-    background: rgb(252, 252, 252);
     padding: 2px 20px 20px 20px;
    /* border-top-right-radius: 34px;
     border-bottom-right-radius: 34px;*/
-    border-left: 2px solid rgba(167, 167, 167, 0.082);
+    border-left: 1px solid rgba(167, 167, 167, 0.054);
 }
 /*contactos*/
 thead, tr, th, td {
