@@ -79,7 +79,7 @@ export default {
 .wrapper {
 
     width: 308px;
-    padding: 2px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
    /* border-top-right-radius: 34px;
     border-bottom-right-radius: 34px;*/
     border-left: 1px solid rgba(167, 167, 167, 0.054);
@@ -102,7 +102,7 @@ th{
 }
 
 .wrapper .perfil {
-    margin-top: 2.2em;
+    margin-top: 1.8em;
     position: relative;
 }
 
@@ -162,19 +162,19 @@ th{
 
 .wrapper .perfil {
     width: 130px;
-    height: 42px;
+    height: 19px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .image-profile {
-    margin-bottom: 31px;
+    margin-bottom: 18px;
 }
 
 .wrapper .social-icons{
     display: flex;
-    margin-top: 13.3em;
+    margin-top: 13em;
     justify-content: center;
 }
 
@@ -182,17 +182,16 @@ th{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 18px;
+    margin: 15px;
 }
 
 .wrapper .social-icons .icon a{
     color: white;
     width: 35px;
-    height: 35px;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 35px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .row{
@@ -201,7 +200,7 @@ th{
     width: 100%;
     height: 1px;
     content: '';
-    margin-top: 1.2em;
+    margin-top: 0.8em;
     background: #cacaca27;
     align-items: center;
 }
@@ -260,8 +259,8 @@ table {
 }
 
  .image{
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .image img {
     display: block;
@@ -270,24 +269,9 @@ display: inline-block;
     height: 73px;
     object-fit: cover;
 }
-.image.fit{
+.image.fit {
     display: block;
     min-width: 4em;
     margin: 6px 9px;
-}
-
-#content {
-    grid-area: conversation-list;
-    overflow-y: scroll;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 40px 1fr max-content;
-    grid-gap: 10px;
-    color: #ddd;
-    font-size: 1.3rem;
-    border-radius: 1px solid #202c88;
-    padding: 20px 20px 20px 15px;
 }
 </style>

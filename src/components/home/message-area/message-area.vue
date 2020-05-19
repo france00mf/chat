@@ -2,11 +2,12 @@
     <div class="container">
       <div class="wrapper">
         <div class="top-bar">
+          <!--PERFIL-->
           <section class="perfil">
           <user-avatar borderProps="4px solid white"></user-avatar>
           <div class="description">
-          <h3 class="name">Steve Williams</h3>
-          <p>Offiline . Last seen 3 hours ago</p>
+          <div class="name"><h2>Steve Williams</h2></div>
+          <div class="state">Offline . Last seen 3 hours ago</div>
           </div>
           </section>
           <section class="top-bar-icons">
@@ -46,42 +47,62 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
 /*Container e Estrutura*/
 .container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    background: rgb(252, 252, 252);
-    border-left: 2px solid rgba(167, 167, 167, 0.082);
+  display: flex;
 }
 .wrapper {
-
-    width: 308px;
-    padding: 2px 20px 20px 50%;
+  background: rgb(252, 252, 252);
+  border-left: 2px solid rgba(167, 167, 167, 0.082);
 }
 /*Top-Bar and Elements*/
 .top-bar {
   display: flex;
   justify-content: space-between;
+  padding: 0px 10px 5px 15px;
 }
 
 .perfil {
   display: flex;
+  padding: 10px 20px 20px 15px;
 }
+
+.description {
+  margin: 23px 0 0 8px;
+}
+
 .name{
-  font-size: 1.1em;
-  font-weight: 400px;
+  font-size: 0.8em;
+  margin-right: 6.4em;
+  white-space: nowrap;
+}
+
+.state {
+  font-size: 0.8em;
+  margin-right: 3.4em;
+  white-space: nowrap;
+  color: rgb(187, 187, 187);
 }
 
 .top-bar-icons {
   display: flex;
-  margin-top: 1.5em;
+  margin-top: 2.2em;
   padding: 0 10px;
 }
 
 .icon a{
-  color: grey;
+  color: rgb(187, 187, 187);
   margin: 10px;
+}
+
+.row {
+  border-bottom: 1px solid rgba(167, 167, 167, 0.082);
 }
 /*Message-Body*/
 ul{
@@ -91,11 +112,23 @@ ul{
 }
 
 ul li {
-    display: inline-block;
-    clear: both;
-    padding: 15px;
-    border-radius: 30px;
-    margin-bottom: 2px;
+  display: inline-block;
+  clear: both;
+  padding: 15px;
+  margin-bottom: 2px;
+}
+
+.him {
+    background: #eee;
+    float: left;
+    margin-left: 8px;
+}
+
+.me {
+    float: right;
+    background: #0084ff;
+    color: #fff;
+    margin-right: 8px;
 }
 /*Chat-Form*/
 
