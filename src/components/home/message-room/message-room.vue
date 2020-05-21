@@ -27,9 +27,9 @@ export default {
 
 <style>
 .message-room{
-  background: red;
   padding: 10px;
   width: 400px;
+  background: #fcfcfc;
 }
 .container-row-mr{
   display: flex;
