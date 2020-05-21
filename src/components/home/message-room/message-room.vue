@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="message-room">
         <div class="container-row-mr">
           <user-search></user-search>
           <message-counter></message-counter>
@@ -26,8 +26,15 @@ export default {
 </script>
 
 <style>
+.message-room{
+  background: red;
+  padding: 10px;
+  width: 400px;
+}
 .container-row-mr{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
   }
+
 </style>
