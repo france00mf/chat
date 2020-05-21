@@ -30,6 +30,9 @@
     background: #f9f8f8;
     border-radius: 0 50px 50px 0 ;
 }
+.user-search input:focus{
+    outline: none;
+}
 .user-search input::placeholder{
     padding-left: 5px ;
     color: #a3a2a5;
