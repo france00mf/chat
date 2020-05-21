@@ -24,7 +24,6 @@
 }
 .user-search input::placeholder{
     padding-left: 5px ;
-    /* color: red; */
     color: #d3d2d5;
 }
 
