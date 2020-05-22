@@ -5,7 +5,7 @@
           <message-counter></message-counter>
         </div>
         <div class="container-row-mr">
-          <filter-dropdown description="sort by"></filter-dropdown>
+          <filter-dropdown description="sort by: "></filter-dropdown>
           <button-add description="add new"></button-add>
         </div>
         <cards></cards>

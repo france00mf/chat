@@ -1,6 +1,6 @@
 <template>
-    <div>
-         {{ description }} <select id="cars">
+    <div class="filter-dropdown">
+         <p>{{ description }}</p> <select id="cars">
   <option value="volvo">Lastest Firs
   </option>
   <option value="saab">Saab</option>
@@ -16,3 +16,14 @@ export default {
     props: ['description']
 }
 </script>
+
+<style scoped>
+.filter-dropdown{
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+}
+.filter-dropdown p{
+    margin: 0;
+}
+</style>
