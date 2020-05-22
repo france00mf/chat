@@ -22,6 +22,7 @@ export default {
     width: 150px;
     justify-content: space-between;
     display: flex;
+    align-items: center;
 }
 .filter-dropdown p{
     margin: 0;
@@ -33,5 +34,8 @@ export default {
     font-weight: bold;
     font-size: 11px;
     border: none;
+}
+.filter-dropdown select:focus{
+    outline: none;
 }
 </style>
