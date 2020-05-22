@@ -25,5 +25,13 @@ export default {
 }
 .filter-dropdown p{
     margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d1d2d8;
+}
+.filter-dropdown select{
+    font-weight: bold;
+    font-size: 11px;
+    border: none;
 }
 </style>
