@@ -6,8 +6,8 @@
           <section class="perfil">
           <user-avatar borderProps="4px solid white"></user-avatar>
           <div class="description">
-          <div class="name"><h2>Steve Williams</h2></div>
-          <div class="state">Offline . Last seen 3 hours ago</div>
+          <div class="name"><h2>{{ nome }} </h2></div>
+          <div class="state">{{ state }} </div>
           </div>
           </section>
           <section class="top-bar-icons">
@@ -22,16 +22,20 @@
         <div class="row"></div>
         <br>
         <div class="message-body">
-        <ul>
-                <li class="him">Hi Alex! What's Up?</li>
-                <li class="me">Oh, hello! All perfectly. I work, study and know this wonderful world!</li>
-                <li class="him">Áudio</li>
-                <li class="me">I remember evrything mate. See you later</li>
+        <ul >
+                <div class="him"><li>Hi Alex! What's Up?</li></div>
+                <p class="him-when">Yesterday 14:26 PM</p>
+                <div class="me"><li>Oh, hello! All perfectly. <br> I work, study and know this wonderful world!</li></div>
+                <p class="me-when">Yesterday 14:26 PM</p>
+                <div class="him"><li>Áudio</li></div>
+                <p class="him-when">Yesterday 14:26 PM</p>
+                <div class="me"><li>I remember everything mate. See you later 🤘</li></div>
+                <p class="me-when">Yesterday 14:26 PM</p>
             </ul>
         </div>
         <div class="chat-form">
             <img v-bind:src="icones">
-            <input type="text" placeholder="Type a message here">
+            <input type="text" placeholder="Type a message here...">
         </div>
       </div>
     </div>
@@ -39,16 +43,23 @@
 
 <script>
 export default {
+  data: function () {
+    return {
+      nome: 'Steve Williams',
+      state: 'Offline . Last seen 3 hours ago',
+      conversation: [
+        {}
+      ]
+    }
+  },
       components: {
         'user-avatar': require('@/components/shared/user-vatar').default
     }
-
 }
 </script>
 
 <style scoped>
 *{
-  margin: 0;
   padding: 0;
   box-sizing:border-box;
 }
@@ -104,10 +115,15 @@ export default {
 .row {
   border-bottom: 1px solid rgba(167, 167, 167, 0.082);
 }
+
 /*Message-Body*/
+
+.message-body {
+  display: flex;
+}
+
 ul{
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -115,21 +131,66 @@ ul li {
   display: inline-block;
   clear: both;
   padding: 15px;
-  margin-bottom: 2px;
+  margin-bottom: 22px;
+  margin: 6px;
 }
 
 .him {
+    display: flex;
     background: #eee;
-    float: left;
     margin-left: 8px;
+    width: 13em;
+    border-radius: 50px;
+    box-shadow:0 15px 10px -4px rgba(0, 0, 0, 0.027);
 }
-
+.him-when {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 31px;
+  font-size: 0.8em;
+  color: rgba(147, 147, 147, 0.449);
+}
 .me {
-    float: right;
-    background: #0084ff;
-    color: #fff;
-    margin-right: 8px;
+  display: flex;
+  justify-content: flex-start;
+  background: #3ec5a7;
+  color: #fff;
+  margin-left: 18em;
+  border-radius: 50px;
+  box-shadow:0 15px 10px -4px rgba(0, 0, 0, 0.027);
+}
+.me-when {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 31px;
+  font-size: 0.8em;
+  color: rgba(147, 147, 147, 0.449);
 }
 /*Chat-Form*/
+.chat-form {
+  grid-area: chat-form;
+  border-radius: 0 0 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
 
+.chat-form {
+  display: grid;
+  grid: 51px / 32px 1fr;
+  align-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  grid-area: chat-form;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding-left: 42px;
+  padding-right: 22px;
+}
+
+.chat-form input {
+  outline: none;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  color: #330;
+  font-size: 1.rem;
+}
 </style>
