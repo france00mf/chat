@@ -1,11 +1,11 @@
 <template>
 <div class="container">
     <div class="wrapper">
-         <div class="perfil">
+         <div class="perfil" v-for="item in perfil" :key="item">
             <user-avatar borderProps="4px solid white" class="image-profile"></user-avatar>
-            <h3 class="name">Smith Cassola</h3>
-            <div class="country">Luanda, Angola</div>
-            <div class="description">Help people to build Web sites and apps + grow awareness in social media 🔥</div>
+            <h3 class="name">{{ item.nome }}</h3>
+            <div class="country">{{ item.country }}</div>
+            <div class="description">{{ item.descricao }}</div>
             </div> 
             <!--Social Media-->
             <div class="social-icons">
@@ -41,11 +41,11 @@
              <a href="#">
                  <p class="gallery-image">Media (31)</p></a>
                     <a href="#">
-                        <p onclick="openImages()" class="image-more">See all ></p></a>
+                        <p class="image-more">See all ></p></a>
                     </div>
-                <div class="gallery">
+                <div class="gallery" v-for="item in gallery" :key="item">
                     <article><a href="#" class="image fit">
-                        <img src="../../assets/eminem.jpg" title="" alt="" /></a></article>
+                        <img v-bind:src="imagem" v-bind:title="descricao" /></a></article>
                              <article><a href="#" class="image fit">
                                  <img src="../../assets/eminem.jpg" title="" alt="" /></a></article>
                                     <article><a href="#" class="image fit"><img src="../../assets/eminem.jpg" title="" alt="" /></a>
@@ -57,7 +57,25 @@
 </template>
 
 <script>
+import goat from '@/assets/eminem.jpg'
 export default {
+    data: function () {
+        return {
+            perfil: [
+                {
+                    nome: 'Smith Cassola',
+                    country: 'Luanda, Angola',
+                    descricao: 'Help people to build Web sites and apps + grow awareness in social media 🔥'
+                }
+            ],
+            gallery: [
+                {
+                    img: goat,
+                    descricao: 'Eminem'
+                }
+            ]
+        }
+    },
     components: {
         'user-avatar': require('@/components/shared/user-vatar').default
     }
