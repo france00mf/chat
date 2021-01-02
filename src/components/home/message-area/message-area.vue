@@ -36,6 +36,9 @@
         <div class="chat-form">
             <img v-bind:src="icones">
             <input type="text" placeholder="Type a message here...">
+            <button></button>
+            <button></button>
+            <button></button>
         </div>
       </div>
     </div>
@@ -168,29 +171,14 @@ ul li {
 }
 /*Chat-Form*/
 .chat-form {
-  grid-area: chat-form;
-  border-radius: 0 0 10px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.chat-form {
-  display: grid;
-  grid: 51px / 32px 1fr;
-  align-content: center;
-  align-items: center;
-  grid-gap: 15px;
-  grid-area: chat-form;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
-  padding-left: 42px;
-  padding-right: 22px;
+  display: flex;
+  margin: 50px 0 5px 10px;
 }
 
 .chat-form input {
   outline: none;
-  padding: 15px;
+  padding: 16px 32em 12px 10px;
   border: 2px solid #ddd;
   border-radius: 50px;
-  color: #330;
-  font-size: 1.rem;
 }
 </style>
