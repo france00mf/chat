@@ -23,7 +23,7 @@
         <br>
         <div class="message-body">
         <ul >
-                <div class="him"><li>Hi Alex! What's Up?</li></div>
+                <div class="him"><li> <p class="first">Hi Alex! What's Up?</p></li></div>
                 <p class="him-when">Yesterday 14:26 PM</p>
                 <div class="me"><li>Oh, hello! All perfectly. <br> I work, study and know this wonderful world!</li></div>
                 <p class="me-when">Yesterday 14:26 PM</p>
@@ -79,16 +79,16 @@ export default {
 .top-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0px 10px 5px 15px;
+  padding: 0px 7px 0 15px;
 }
 
 .perfil {
   display: flex;
-  padding: 10px 20px 20px 15px;
+  padding: 5px 0 20px 15px;
 }
 
 .description {
-  margin: 23px 0 0 8px;
+  margin: 4px 0 0 8px;
 }
 
 .name{
@@ -98,8 +98,8 @@ export default {
 }
 
 .state {
-  font-size: 0.8em;
-  margin-right: 3.4em;
+  font-size: 0.9em;
+  margin: -11px 1.4em 0 0;
   white-space: nowrap;
   color: rgb(187, 187, 187);
 }
@@ -133,9 +133,16 @@ ul{
 ul li {
   display: inline-block;
   clear: both;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 22px;
   margin: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.first{
+  font-weight: 600;
+  margin: 0 0 0 0;
 }
 
 .him {
@@ -155,10 +162,10 @@ ul li {
 }
 .me {
   display: flex;
-  justify-content: flex-start;
   background: #3ec5a7;
   color: #fff;
-  margin-left: 18em;
+  text-align: justify;
+  margin-left: 15.5em;
   border-radius: 50px;
   box-shadow:0 15px 10px -4px rgba(0, 0, 0, 0.027);
 }
