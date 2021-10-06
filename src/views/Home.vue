@@ -6,6 +6,7 @@
    </div>
 </template>
 <script>
+//Teste for Github
 export default {
   name: 'Home',
   components: {
